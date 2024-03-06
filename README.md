@@ -2,11 +2,11 @@
 
 ## Overview
 
-Very simple generic Cache implementation where entries expire after a set time.
+Very simple generic Cache implementation where entries expire after a set time. 
 
 ## Usage
 
-
+The cache will remain active for as long as the main thread is running.
 
 ````
 let c :Cache<i32, String> = Cache::new(Duration::from_secs(10));
